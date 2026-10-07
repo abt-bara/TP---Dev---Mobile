@@ -96,14 +96,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void loadQuestions() {
-        questions.add(new Question("What is the capital of Tunisia?",
-                new String[]{"Tunis", "Sfax", "Sousse"}, 0));
-        questions.add(new Question("How many pillars does Islam have?",
-                new String[]{"Four", "Five", "Six"}, 1));
-        questions.add(new Question("Which surah is called the heart of the Quran?",
-                new String[]{"Al-Fatiha", "Yasin", "Al-Ikhlas"}, 1));
-    }
+        String[] texts = getResources().getStringArray(R.array.question_texts);
+        String[] allOptions = getResources().getStringArray(R.array.all_options);
+        int[] correct = getResources().getIntArray(R.array.correct_answers);
 
+        for (int i = 0; i < texts.length; i++) {
+            // Question i owns options i*3, i*3+1, i*3+2
+            String[] options = Arrays.copyOfRange(allOptions, i * 3, i * 3 + 3);
+            questions.add(new Question(texts[i], options, correct[i]));
+        }
+    }
     // ---------------- QUIZ LOGIC ----------------
 
     // Draws the current question. Reads answers[] but never changes it.

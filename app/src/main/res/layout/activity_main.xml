@@ -94,20 +94,19 @@
             android:layout_width="40dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="back" />
+            android:text="@string/btn_previous" />
 
         <Button
             android:id="@+id/btnRestart"
             android:layout_width="154dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:text="Restart" />
+            android:text="@string/btn_restart" />
         <Button
             android:id="@+id/btnNext"
             android:layout_width="40dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Next" />
+            android:text="@string/btn_next" />
     </LinearLayout>
 
 
@@ -117,5 +116,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="Submit" />
+        android:text="@string/btn_submit" />
 </LinearLayout>

@@ -1,3 +1,41 @@
 <resources>
     <string name="app_name">TP - Mobile</string>
+    <!-- UI texts -->
+    <string name="btn_submit">Submit</string>
+    <string name="btn_previous">Previous</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_restart">Restart</string>
+    <string name="choose_answer">Please choose an answer</string>
+    <string name="correct">Correct!</string>
+    <string name="wrong">Wrong</string>
+
+    <!-- Quiz data -->
+    <string-array name="question_texts">
+        <item>What is the capital of Tunisia?</item>
+        <item>How many pillars does Islam have?</item>
+        <item>Which surah is called the heart of the Quran?</item>
+    </string-array>
+
+    <!-- Flat list: 3 options per question, in question order -->
+    <string-array name="all_options">
+        <!-- Q1 -->
+        <item>Tunis</item>
+        <item>Sfax</item>
+        <item>Sousse</item>
+        <!-- Q2 -->
+        <item>Four</item>
+        <item>Five</item>
+        <item>Six</item>
+        <!-- Q3 -->
+        <item>Al-Fatiha</item>
+        <item>Yasin</item>
+        <item>Al-Ikhlas</item>
+    </string-array>
+
+    <integer-array name="correct_answers">
+        <item>0</item>
+        <item>1</item>
+        <item>1</item>
+    </integer-array>
+
 </resources>
